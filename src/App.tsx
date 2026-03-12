@@ -8,11 +8,13 @@ import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Achievements from './pages/Achievements';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app">
         <Navbar />
         <main>
