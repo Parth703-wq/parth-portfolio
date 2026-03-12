@@ -1,0 +1,203 @@
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.achievement-card {
+    padding: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    transition: var(--transition);
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
+}
+
+.ach-icon {
+    color: var(--accent-primary);
+    filter: drop-shadow(0 0 10px var(--accent-glow));
+}
+
+.ach-type {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-secondary);
+    font-weight: 700;
+}
+
+.ach-info h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    line-height: 1.4;
+}
+
+.ach-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Premium Sections UI Enhancement */
+.premium-sections-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.info-block {
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.academic-glow {
+    border-top: 4px solid var(--accent-primary);
+}
+
+.funding-glow {
+    border-top: 4px solid var(--accent-secondary);
+}
+
+.block-title {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    font-weight: 800;
+}
+
+.block-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.premium-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.premium-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--border-color);
+}
+
+.item-icon {
+    color: var(--accent-primary);
+    padding-top: 0.3rem;
+}
+
+.item-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-text p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.funding-item {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-badge {
+    background: rgba(6, 182, 212, 0.1);
+    color: var(--accent-secondary);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Certifications */
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.cert-card {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.cert-card:hover {
+    border-color: var(--accent-primary);
+    background: rgba(139, 92, 246, 0.05);
+}
+
+.cert-type {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-secondary);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.cert-info h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cert-info p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.cert-link-icon {
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+    .achievements-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .premium-sections-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .achievements-grid,
+    .certs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-block {
+        padding: 1.5rem;
+    }
+}

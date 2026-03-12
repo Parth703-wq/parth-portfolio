@@ -1,0 +1,119 @@
+/* Service Card */
+.service-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    align-items: flex-start;
+    transition: var(--transition);
+}
+
+.card-icon {
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--accent-primary);
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-info p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Project Card */
+.project-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.card-header h4 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+}
+
+.external-link {
+    color: var(--text-secondary);
+}
+
+.external-link:hover {
+    color: var(--accent-primary);
+}
+
+.lock-icon {
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+.card-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.tech-tag {
+    background: var(--surface-lighter);
+    color: var(--accent-secondary);
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.view-btn {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    transition: var(--transition);
+}
+
+.view-btn:hover {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: white;
+}
+
+/* Internal Project Specific Styles */
+.internal-card {
+    border-color: rgba(6, 182, 212, 0.1);
+}
+
+.internal-btn {
+    border-color: var(--accent-secondary);
+    color: var(--accent-secondary);
+}
+
+.internal-btn:hover {
+    background: var(--accent-secondary);
+    border-color: var(--accent-secondary);
+    color: white;
+}

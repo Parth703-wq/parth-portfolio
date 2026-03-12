@@ -1,0 +1,83 @@
+.tech-strip {
+    width: 100%;
+    padding: 3rem 0;
+    background: var(--surface-color);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    overflow: hidden;
+    position: relative;
+}
+
+.strip-container {
+    display: flex;
+    width: 100%;
+}
+
+.strip-content {
+    display: flex;
+    gap: 4rem;
+    padding: 0 2rem;
+    animation: scroll 40s linear infinite;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+.tech-item img {
+    height: 40px;
+    width: auto;
+    filter: grayscale(1) brightness(2);
+    transition: var(--transition);
+    object-fit: contain;
+}
+
+.tech-item span {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.tech-item:hover img {
+    filter: grayscale(0) brightness(1);
+    transform: scale(1.1);
+}
+
+.tech-item:hover span {
+    color: var(--text-primary);
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Gradient Mask */
+.tech-strip::before,
+.tech-strip::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.tech-strip::before {
+    left: 0;
+    background: linear-gradient(to right, var(--surface-color), transparent);
+}
+
+.tech-strip::after {
+    right: 0;
+    background: linear-gradient(to left, var(--surface-color), transparent);
+}
