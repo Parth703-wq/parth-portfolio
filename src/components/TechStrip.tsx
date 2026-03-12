@@ -1,6 +1,6 @@
 import './TechStrip.css';
 import n8nLogo from '../assets/n8n.png';
-import matplotlibLogo from '../assets/matplotlib.png';
+import matplotlibLogo from '../assets/matplotlib_circle.png';
 
 const TechStrip = () => {
     const techs = [

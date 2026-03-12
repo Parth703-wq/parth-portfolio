@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import './Skills.css';
 import n8nLogo from '../assets/n8n.png';
-import matplotlibLogo from '../assets/matplotlib.png';
+import matplotlibLogo from '../assets/matplotlib_circle.png';
 
 const Skills = () => {
     const categories = [
