@@ -1,5 +1,6 @@
 import './TechStrip.css';
 import n8nLogo from '../assets/n8n.png';
+import matplotlibLogo from '../assets/matplotlib.png';
 
 const TechStrip = () => {
     const techs = [
@@ -8,6 +9,7 @@ const TechStrip = () => {
         { name: "Scikit-learn", icon: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" },
         { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
         { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+        { name: "Matplotlib", icon: matplotlibLogo },
         { name: "n8n", icon: n8nLogo },
         { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
         { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },

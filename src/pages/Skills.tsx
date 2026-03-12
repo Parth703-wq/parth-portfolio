@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import './Skills.css';
 import n8nLogo from '../assets/n8n.png';
+import matplotlibLogo from '../assets/matplotlib.png';
 
 const Skills = () => {
     const categories = [
@@ -28,7 +29,7 @@ const Skills = () => {
             skills: [
                 { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
                 { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
-                { name: "Matplotlib", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+                { name: "Matplotlib", icon: matplotlibLogo },
                 { name: "Seaborn", icon: "https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" }
             ]
         },
