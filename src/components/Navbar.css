@@ -6,7 +6,7 @@
     width: 90%;
     max-width: 1000px;
     z-index: 1000;
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem;
     border-radius: 50px;
 }
 
@@ -15,6 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 !important;
+    position: relative;
 }
 
 .logo {
@@ -23,13 +24,9 @@
     letter-spacing: -1px;
 }
 
-.accent {
-    color: var(--accent-primary);
-}
-
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
 }
 
 .nav-links a {
@@ -38,6 +35,7 @@
     font-weight: 500;
     color: var(--text-secondary);
     padding: 0.5rem 0;
+    transition: var(--transition);
 }
 
 .nav-links a:hover,
@@ -56,9 +54,66 @@
     box-shadow: 0 0 10px var(--accent-glow);
 }
 
-@media (max-width: 768px) {
-    .nav-links {
+/* Mobile Specific */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.mobile-overlay {
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 0;
+    right: 0;
+    background: rgba(13, 13, 13, 0.95) !important;
+    backdrop-filter: blur(15px);
+    border-radius: 24px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style: none;
+    text-align: center;
+}
+
+.mobile-nav-links a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    display: block;
+    width: 100%;
+}
+
+.mobile-nav-links a.active {
+    color: var(--accent-primary);
+}
+
+@media (max-width: 968px) {
+    .nav-links.desktop-only {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .desktop-only {
         display: none;
-        /* Mobile menu needed but for now keeping it simple */
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+    
+    .navbar {
+        width: 95%;
+        padding: 0.6rem 1.5rem;
     }
 }
